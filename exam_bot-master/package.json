@@ -1,0 +1,30 @@
+{
+  "name": "exam_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.5.0",
+    "encoding": "^0.1.12",
+    "jsdom": "^14.0.0",
+    "telegraf": "^3.29.0",
+    "request": "latest",
+    "utf-8-validate": "^5.0.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "now": "^14.0.2"
+  },
+  "scripts": {
+    "test": "echo test",
+    "start": "node schedulesParser.js",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "deploy": "now alias --token=$ENV_ZEIT_KEY",
+    "build": "node index.js"
+  }
+}
