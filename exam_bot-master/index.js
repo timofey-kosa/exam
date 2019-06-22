@@ -3,7 +3,7 @@
 const { start } = require('./schedulesParser.js');
 const Telegraf = require('telegraf');
 
-const BOT_TOKEN = process.env.BOT_TOKEN || '824373177:AAHfAo4X9VxXKPcr2_SIu7aNrdZ4b9o8pFA';
+const BOT_TOKEN = process.env.BOT_TOKEN || '617877888:AAE1-4RS-NnuKwcWXHTnEskUOal90OZziEM';
 
 const bot = new Telegraf(BOT_TOKEN, { webhookReply: false } );
 
